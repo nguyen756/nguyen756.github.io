@@ -1,0 +1,46 @@
+        body {
+            background: url('https://frutiger-aero.org/img/haa-3.webp') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+            padding: 50px;
+            margin: 10px;
+        }
+        h1 {
+            color: rgb(0, 255, 21);
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgb(0, 160, 8);
+        }
+        .team-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 700px;
+            margin: auto;
+        }
+        .thebox {
+            background: url('https://64.media.tumblr.com/c1d23305d89b5a3782be034a7912ae22/d06f8dd9462f8ec1-d6/s1280x1920/3c2243fc5501447025ed481de3eb887bcb5979e1.jpg') no-repeat center center fixed ;
+            border: 2px solid black; 
+            border-radius: 10px;
+            padding: 10px;
+            width: 200px;
+            box-sizing: border-box;
+        }
+        .pfp {
+            width: 70px;
+            height: 70px;
+            margin: auto;
+            background: lightgray;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .name {
+            margin-top: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            color:rgb(255, 255, 255);
+        }
