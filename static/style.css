@@ -116,3 +116,11 @@ body {
 
 
         }
+        .centered-message {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px; 
+        }
+        .centered-message img {
+        vertical-align: middle;
+        }
