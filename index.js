@@ -7,7 +7,13 @@ app.use('/static',express.static('static'));
 app.get('/',function(req,res)
 {
    
-    res.sendFile(__dirname+'/main.html');
+    res.sendFile(__dirname+'/index.html');
+    
+});
+app.get('/bs',function(req,res)
+{
+   
+    res.sendFile(__dirname+'/bs.html');
     
 });
 app.get('/about',function(req,res){
@@ -16,9 +22,9 @@ res.sendFile(__dirname+'/about.html');
 });
 
 
-app.listen(8080,function()
+app.listen(3000,function()
 {
-    console.log('server is running on port 8080')
+    console.log('server is running on port 3000')
 }
 );
 

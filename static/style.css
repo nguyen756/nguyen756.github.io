@@ -1,20 +1,27 @@
-body {
+        body {
             background: url('/static/img/frutiger-aero-6.webp') no-repeat center center fixed;
             background-size: cover;
             text-align: center;
             padding: 50px;
             margin: 10px;
         }
+        .body2 {
+            background: url('/static/img/1349540.png') no-repeat center center fixed;
+            background-size: cover;
+            padding:0px;
+            margin:0px;
+            border:0px;
+            text-align: left;
+        }
         p {
-            background: rgba(255, 255, 255, 0.18); /* semi-transparent white */
+            background: rgba(255, 255, 255, 0.18); 
             border-radius: 10px;
             padding: 30px;
             color: #000000;
             text-align: center;
             box-shadow: 0 4px 32px 0 rgba(31, 38, 135, 0.37);
             border: 1px solid rgba(255, 255, 255, 0.18);
-            backdrop-filter: blur(2px); /* glass effect */
-            /* Optional: add a subtle gradient for more gloss */
+            backdrop-filter: blur(2px); 
             background-image: linear-gradient(120deg, rgba(195, 245, 251, 0.651) 0%, rgba(255, 255, 255, 0) 100%);
         }
         .id001 {
@@ -22,11 +29,18 @@ body {
             font-weight: bold;
         }
         h1 {
-            color: rgb(254, 254, 254);
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            text-shadow: 4px 0px 5px rgb(0, 160, 8);
+                color: rgb(254, 254, 254);
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+                text-shadow: 4px 0px 5px rgb(0, 160, 8);
 
+        }
+        h2{
+            color: rgb(254, 254, 254);
+            font-size: 2rem;
+            margin-bottom: 15px;
+            text-shadow: 3px 0px 4px rgb(0, 160, 8);
+            text-align: center;
         }
         .team-container {
             display: grid;
@@ -124,3 +138,72 @@ body {
         .centered-message img {
         vertical-align: middle;
         }
+        img{
+            cursor: pointer;
+        }
+        img:active {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+        .navbar.navbar-expand-sm{
+            background: linear-gradient(0deg, #00000070 0%, #00000018 100%);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color:#000000;
+        }
+        .list-group-item:hover {
+            background: rgba(0, 0, 0, 0.1);
+        }
+        .list-group-item:active{
+            background: blue;
+        }
+        .whitetext{
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .two-state-list {
+    background: linear-gradient(0deg, #000dff74 0%, #001ddc97 100%);
+    color: #fff;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.17);
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+.two-state-list:hover, .two-state-list.active {
+    background: linear-gradient(0deg, #00aafff1 0%, #009dffa0 100%);
+    color: #000000;
+    box-shadow: 0 6px 24px 0 rgba(31, 38, 135, 0.27);
+}
+.two-state-button-2 {
+    background: linear-gradient(30deg, #0048ff 0%, #00000044 100%);
+    color: #fff !important;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.17);
+    font-weight: normal;
+    padding: 10px 24px;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.two-state-button-2:hover, .two-state-button-2:focus {
+    background: linear-gradient(0deg, #0040ff8e 0%, #003cff 100%);
+    color: #000000 !important;
+    box-shadow: 0 6px 24px 0 rgba(31, 38, 135, 0.27);
+}
+.two-state-list:first-child {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.two-state-list:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.list-group .list-group-item {
+    border-radius: 20px !important;
+}
+.form-control::placeholder {
+    color: #fff !important;   /* or any color you want */
+    opacity: 1;               /* ensures it's not faded */
+}
