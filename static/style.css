@@ -146,7 +146,12 @@
             transition: transform 0.3s ease;
         }
         .navbar.navbar-expand-sm{
-            background: linear-gradient(0deg, #00000070 0%, #00000018 100%);
+            background: linear-gradient(
+        0deg,
+        #00000048 0%,
+        #00000017 20%,
+        #00000038 100%
+    );
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             color:#000000;
         }
@@ -172,7 +177,7 @@
     cursor: pointer;
 }
 .two-state-list:hover, .two-state-list.active {
-    background: linear-gradient(0deg, #00aafff1 0%, #009dffa0 100%);
+    background: linear-gradient(0deg, #00aaff0e 0%, #009dffa0 100%);
     color: #000000;
     box-shadow: 0 6px 24px 0 rgba(31, 38, 135, 0.27);
 }
