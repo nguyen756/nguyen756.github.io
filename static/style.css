@@ -1,4 +1,4 @@
-        body {
+body {
             background: url('/static/img/frutiger-aero-6.webp') no-repeat center center fixed;
             background-size: cover;
             text-align: center;
@@ -212,3 +212,60 @@
     color: #fff !important;   /* or any color you want */
     opacity: 1;               /* ensures it's not faded */
 }
+.col-md-8 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.column3-header {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    background: linear-gradient(0deg, #00000048 0%, #00000017 20%, #00000038 100%);
+    border-top-left-radius: 20px;
+    text-align: center;
+    border-top-right-radius: 20px;
+    /* Add vertical padding only */
+    padding: 18px 0;
+    color:white;
+    font-weight: bold;
+    text-shadow: #000000 2px 2px 4px;
+    font-size:25px !important;
+}
+#bbc {
+  padding: 20px;
+  border-radius: 15px; /* optional, keeps rounded corners */
+  background: linear-gradient(0deg, #00000021 0%, #00000079 100%);
+  max-width: 500px;
+  max-height: 310px;
+  text-align: center;
+  margin: auto; 
+
+}
+#bbc .form-control {
+  background: rgba(255, 255, 255, 0.1); /* semi-transparent background */
+  border: 1px solid #ccc; /* subtle border */
+  max-width: 100%;    /* responsive width */
+  border-radius: 15px;
+}
+#bbc .form-control:focus {
+  background: rgba(255, 255, 255, 0.194) !important; /* slightly more opaque on focus */
+  border-color: #0037ff51; /* change border color on focus */
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6); /* subtle glow effect */
+}
+#bbc .form-control:placeholder-shown{
+  background: rgba(255, 255, 255, 0.078); /* even more opaque when active */
+}
+#bbc .form-control:not(:placeholder-shown)  {
+  background: #2600ff2a !important;   /* your specific color */
+  color: white !important;           /* white text */
+}
+#bbc .form-control:hover{
+    background: rgba(255, 255, 255, 0.18) !important; /* slightly more opaque on hover */
+}
+#bbc .col-sm-3 {
+  text-align: left;
+  margin: auto;
+  color: white !important;
+}
+
