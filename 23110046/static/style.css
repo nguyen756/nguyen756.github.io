@@ -1,0 +1,271 @@
+body {
+            background: url('/static/img/frutiger-aero-6.webp') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+            padding: 50px;
+            margin: 10px;
+        }
+        .body2 {
+            background: url('/static/img/1349540.png') no-repeat center center fixed;
+            background-size: cover;
+            padding:0px;
+            margin:0px;
+            border:0px;
+            text-align: left;
+        }
+        p {
+            background: rgba(255, 255, 255, 0.18); 
+            border-radius: 10px;
+            padding: 30px;
+            color: #000000;
+            text-align: center;
+            box-shadow: 0 4px 32px 0 rgba(31, 38, 135, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(2px); 
+            background-image: linear-gradient(120deg, rgba(195, 245, 251, 0.651) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+        .id001 {
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+        h1 {
+                color: rgb(254, 254, 254);
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+                text-shadow: 4px 0px 5px rgb(0, 160, 8);
+
+        }
+        h2{
+            color: rgb(254, 254, 254);
+            font-size: 2rem;
+            margin-bottom: 15px;
+            text-shadow: 3px 0px 4px rgb(0, 160, 8);
+            text-align: center;
+        }
+        .team-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 700px;
+            margin: auto;
+        }
+        .thebox {
+            /*background: url('/static/img/tumblr_c1d23305d89b5a3782be034a7912ae22_3c2243fc_1280.jpg') no-repeat center center fixed ;*/
+            background: rgba(0, 0, 0, 0.283);
+            backdrop-filter: blur(1px);
+             background-image: linear-gradient(
+            to bottom,                        /* direction: top → bottom */
+            rgba(0, 0, 0, 0.205) 0%,           /* almost transparent at top */
+            rgba(0, 0, 0, 0.45) 60%,          /* darker in the middle */
+            rgba(0, 0, 0, 0.85) 100%          /* strong black at bottom */
+    );
+            border: none;
+            border-radius: 15px;
+            padding: 10px;
+            width: 200px;
+            box-sizing: border-box;
+        }
+        .pfp {
+            width: 70px;
+            height: 70px;
+            margin: auto;
+            background: lightgray;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .name {
+            margin-top: 10px;
+            font-size: 15px;
+            /*font-weight: bold;*/
+            color:rgb(255, 255, 255);
+        }
+        .two-state-button{
+            background: rgba(0, 0, 0, 0.148);
+            backdrop-filter: blur(1px);
+            background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.25) 30%, rgba(5, 3, 3, 0.114) 100%);
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            color: aliceblue;
+            font-weight: bold;
+        }
+        .corner-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        }
+        .corner-btn:hover {
+            background: rgba(0, 0, 0, 0.078);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color:#000000;
+        }
+        .thebox:hover {
+            background: rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            .name{
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+            }
+        }
+        .simplebox{
+            display: block;
+            background:red;
+            color:yellow;
+            width: 150px;
+            text-align:center;
+            padding: 50px;
+            margin: 10px;
+            
+
+
+        }
+        .centered-message {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px; 
+        }
+        .centered-message img {
+        vertical-align: middle;
+        }
+        img{
+            cursor: pointer;
+        }
+        img:active {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+        .navbar.navbar-expand-sm{
+            background: linear-gradient(
+        0deg,
+        #00000048 0%,
+        #00000017 20%,
+        #00000038 100%
+    );
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color:#000000;
+        }
+        .list-group-item:hover {
+            background: rgba(0, 0, 0, 0.1);
+        }
+        .list-group-item:active{
+            background: blue;
+        }
+        .whitetext{
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .two-state-list {
+    background: linear-gradient(0deg, #000dff74 0%, #001ddc97 100%);
+    color: #fff;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.17);
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+.two-state-list:hover, .two-state-list.active {
+    background: linear-gradient(0deg, #00aaff0e 0%, #009dffa0 100%);
+    color: #000000;
+    box-shadow: 0 6px 24px 0 rgba(31, 38, 135, 0.27);
+}
+.two-state-button-2 {
+    background: linear-gradient(30deg, #0048ff 0%, #00000044 100%);
+    color: #fff !important;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.17);
+    font-weight: normal;
+    padding: 10px 24px;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.two-state-button-2:hover, .two-state-button-2:focus {
+    background: linear-gradient(0deg, #0040ff8e 0%, #003cff 100%);
+    color: #000000 !important;
+    box-shadow: 0 6px 24px 0 rgba(31, 38, 135, 0.27);
+}
+.two-state-list:first-child {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.two-state-list:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.list-group .list-group-item {
+    border-radius: 20px !important;
+}
+.form-control::placeholder {
+    color: #fff !important;   /* or any color you want */
+    opacity: 1;               /* ensures it's not faded */
+}
+.col-md-8 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.column3-header {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    background: linear-gradient(0deg, #00000048 0%, #00000017 20%, #00000038 100%);
+    border-top-left-radius: 20px;
+    text-align: center;
+    border-top-right-radius: 20px;
+    /* Add vertical padding only */
+    padding: 18px 0;
+    color:white;
+    font-weight: bold;
+    text-shadow: #000000 2px 2px 4px;
+    font-size:25px !important;
+}
+#bbc {
+  padding: 20px;
+  border-radius: 15px; /* optional, keeps rounded corners */
+  background: linear-gradient(0deg, #00000021 0%, #00000079 100%);
+  max-width: 500px;
+  max-height: 310px;
+  text-align: center;
+  margin: auto; 
+
+}
+#bbc .form-control {
+  background: rgba(255, 255, 255, 0.1); /* semi-transparent background */
+  border: 1px solid #ccc; /* subtle border */
+  max-width: 100%;    /* responsive width */
+  border-radius: 15px;
+}
+#bbc .form-control:focus {
+  background: rgba(255, 255, 255, 0.194) !important; /* slightly more opaque on focus */
+  border-color: #0037ff51; /* change border color on focus */
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6); /* subtle glow effect */
+}
+#bbc .form-control:placeholder-shown{
+  background: rgba(255, 255, 255, 0.078); /* even more opaque when active */
+}
+#bbc .form-control:not(:placeholder-shown)  {
+  background: #2600ff2a !important;   /* your specific color */
+  color: white !important;           /* white text */
+}
+#bbc .form-control:hover{
+    background: rgba(255, 255, 255, 0.18) !important; /* slightly more opaque on hover */
+}
+#bbc .col-sm-3 {
+  text-align: left;
+  margin: auto;
+  color: white !important;
+}
+

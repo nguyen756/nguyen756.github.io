@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="body2">
+
+    <h2 style="text-shadow:3px 0px 4px rgb(4, 0, 255);">
+        Bootstrap Example
+    </h2>
+    <nav
+        class="navbar navbar-expand-sm"
+    >
+        <a class="navbar-brand whitetext" style="padding-left: 30px;" href="/">Navbar</a>
+        <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        ></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item ">
+                    <a class="nav-link whitetext" href="#" aria-current="page"
+                        >Home <span class="visually-hidden">(current)</span></a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link whitetext" href="/about">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a
+                        class="nav-link dropdown-toggle  whitetext"
+                        href="#"
+                        id="dropdownId"
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >Dropdown</a
+                    >
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="/about">About</a>
+                        <a class="dropdown-item" href="/">Main menu</a>
+                    </div>
+                </li>
+            </ul>
+            
+        </div>
+    </nav>
+    <div class="container-fluid">
+  <div class="row">
+    <!-- Left side: list and card (about 4/12 columns = 33%) -->
+    <div class="col-md-4" style="margin-top: 30px;">
+      <div class="card mb-3" style="background: transparent; border: none;">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item two-state-list">An item</li>
+          <li class="list-group-item two-state-list">A second item</li>
+          <li class="list-group-item two-state-list">A third item</li>
+        </ul>
+        <div class="card mt-3" style="width: 100%;font-weight:bold; background: linear-gradient(0deg, #00000070 0%, #0000008a 100%); border:0px;border-radius: 30px; color: white">
+          <div class="card-body" >
+            <h5 class="card-title">Account registration</h5>
+            
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="btn two-state-button-2">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Right side: Column 3 (about 8/12 columns = 67%) -->
+    <div class="col-md-8" style="background-color: rgba(0, 0, 0, 0.333); margin-top: 30px; border-radius: 20px;">
+      <div class="column3-header text-center py-4 mb-4 fs-2">
+    Registration Area
+  </div>
+      <form action="/account/signup" method="post" id="bbc">
+  <div class="mb-3 row">
+    <label for="txtUsername" class="col-sm-3 col-form-label" >Username</label>
+    <div class="col-sm-9">
+      <input type="username" class="form-control" id="txtUsername" placeholder="Enter your username" name ="username">
+    </div>
+  </div>
+  
+  <div class="mb-3 row">
+    <label for="txtPassword" class="col-sm-3 col-form-label" >Password</label>
+    <div class="col-sm-9">
+      <input type="password" class="form-control" id="txtPassword" placeholder="Enter your password" name="password">
+      
+    </div>
+  </div>
+  <div class="mb-3 row">
+    <label for="txtPassword" class="col-sm-3 col-form-label" style="padding-top: 10px;" >Confirm password</label>
+    <div class="col-sm-9">
+      <input type="password" class="form-control"  id="txtconfirmPassword" placeholder="Enter your password" name="confirm_password" style="margin-top: 15px;" >
+      
+    </div>
+  </div>
+  <div class="mb-3 row">
+    <label for="txtEmail" class="col-sm-3 col-form-label" >Email</label>
+    <div class="col-sm-9">
+      <input type="email" class="form-control"  id="txtEmail" placeholder="Enter your email" name="email">
+
+    </div>
+  </div>
+  <div class="col-sm-12 text-end">
+    <button type="submit" class="btn btn-primary mb-3 two-state-button-2">Confirm <i class="bi bi-share"></i></button>
+  </div>
+</form>
+
+    </div>
+  </div>
+</div>
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script>
+function handleSubmit(e) {
+    e.preventDefault(); // Prevent form submission
+    const username = document.getElementById('txtUsername').value;
+    const password = document.getElementById('txtPassword').value;
+    const email = document.getElementById('txtEmail').value;
+    const confirm_password = document.getElementById('txtconfirmPassword').value;
+    if (username.length <6||password.length < 6) {
+        alert('Username and password must be at least 6 characters long.');
+        return;
+    }
+    if (password !== confirm_password) {
+        alert('Passwords do not match.');
+        return;
+    }
+    if (password.length === 0||email.length===0) {
+        alert('All fields must be filled out.');
+        return;
+    }
+
+
+}
+document.querySelector("#bbc").addEventListener('submit', handleSubmit);
+</script>
+</body>
+</html>
